@@ -20,18 +20,21 @@ body {
 
 .square {
     position: absolute;
-    top: 50px;
-    width: 60px;
-    height: 60px;
-    border: 3px solid black;
+    top: 150px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
     transform: translateX(-50%);
     cursor: pointer;
+    transition: 0.3s;
 }
 
 
 .red {
     background-color: tomato;
-    left: 60%;
+    border: 2px solid red;
+    left: 65.5%;
+    box-shadow: 0 0 15px tomato;
 }
 
 .red:hover ~ .bg {
@@ -40,7 +43,9 @@ body {
 
 .blue {
     background-color: royalblue;
-    left: 20%;
+    border: 2px solid blue;
+    left: 25.5%;
+    box-shadow: 0 0 15px royalblue;
 }
 
 .blue:hover ~ .bg {
@@ -48,8 +53,10 @@ body {
 }
 
 .green {
-    background-color: greenyellow;
-    left: 40%;
+    background-color: lawngreen;
+    border: 2px solid green;
+    left: 45.5%;
+    box-shadow: 0 0 15px green;
 }
 
 .green:hover ~ .bg {
@@ -63,4 +70,48 @@ body {
 
 .gold:hover ~ .bg {
     background-color: gold;
+}
+
+.btn-zoom, .btn-color, .btn-move {
+    width: 120px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50px;
+    padding: 10px 30px;
+    background: none;
+    border: 3px solid white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+
+.btn-zoom {
+    left: 20%;
+}
+
+.btn-zoom:hover ~ .square {
+    width: 200px;
+    height: 200px;
+}
+
+.btn-move {
+    left: 40%;
+}
+
+.btn-move:hover ~ .square {
+    top: 500px;
+}
+
+.btn-color {
+    left: 60%;
+}
+
+.btn-color:hover ~ .square {
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: none;
 }

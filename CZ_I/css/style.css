@@ -19,7 +19,8 @@ main {
 div {
     margin: 0 auto;
     height: 200px;
-    width: 600px;border: 3px solid black;
+    width: 600px;
+    border: 3px solid black;
 }
 
 .red {
@@ -28,11 +29,32 @@ div {
 
 .blue {
     position: relative;
-    top: 50px;
-    left: 50px;
     background-color: blue;
+}
+
+.gold {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+
+    background-color: gold;
 }
 
 .green {
     background-color: greenyellow;
+}
+
+.one {
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+}
+
+.two {
+    position: relative;
+    top: 25%;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
 }

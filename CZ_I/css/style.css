@@ -5,63 +5,62 @@
 }
 
 body {
-    /*margin: 50px;*/
+    font-family: 'Montserrat', sans-serif;
     background-color: #333;
-    font-family: 'Comfortaa', cursive;
-    color: black;
     font-size: 36px;
+    color: #fff;
 }
 
-section {
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 50px;
-    height: 300px;
+.bg {
+    width: 100vw;
+    height: 100vh;
     background-color: #ddd;
+    transition: 0.3s;
 }
 
-div {
-    height: 100px;
-    width: 100px;
+.square {
+    position: absolute;
+    top: 50px;
+    width: 60px;
+    height: 60px;
     border: 3px solid black;
+    transform: translateX(-50%);
+    cursor: pointer;
 }
+
 
 .red {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: tomato;
+    left: 60%;
+}
+
+.red:hover ~ .bg {
     background-color: tomato;
 }
 
 .blue {
-    position: absolute;
-    top: 0;
-    left: 100px;
     background-color: royalblue;
+    left: 20%;
+}
+
+.blue:hover ~ .bg {
+    background-color: blue;
 }
 
 .green {
-    position: absolute;
-    top: 0;
-    left: 200px;
+    background-color: greenyellow;
+    left: 40%;
+}
+
+.green:hover ~ .bg {
     background-color: greenyellow;
 }
 
 .gold {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     background-color: gold;
+    left: 80%;
 }
 
-.silver {
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-    background-color: silver;
-}
-
-.black {
-    background-color: black;
-    display: inline-block;
+.gold:hover ~ .bg {
+    background-color: gold;
 }

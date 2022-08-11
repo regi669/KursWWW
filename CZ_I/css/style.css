@@ -115,3 +115,14 @@ body {
     border: 2px solid white;
     box-shadow: none;
 }
+
+.blue:hover {
+    transform: translate(10px, 10px);
+}
+
+.center-object {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

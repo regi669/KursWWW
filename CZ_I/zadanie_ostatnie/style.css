@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.long {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    height: 600px;
+    width: 150px;
+    background-color: tomato;
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.long:hover {
+    height: 200px;
+}
+
+.big {
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    height: 600px;
+    width: 800px;
+    background-color: royalblue;
+}
+
+.child {
+    border: 3px solid black;
+    height: 200px;
+    transition: background-color .3s;
+}
+
+.first + div {
+    background-color: lawngreen;
+}
+
+.first:hover ~ div {
+    background-color: gold;
+}

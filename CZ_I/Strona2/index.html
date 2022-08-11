@@ -1,16 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,700&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e9b3124b7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creative Design</title>
 </head>
 <body>
 
-    <p>Siema :D!</p>
+    <nav>
+        <div class="wrapper">
+            <button class="burger-icon"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav-items">
+                <a href="#">home</a>
+                <a href="#about-us">o nas</a>
+                <a href="#products">produkty</a>
+                <a href="#kontakt">kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="hero-bg"></div>
+        <div class="hero-text">
+            <h1>creative<span>design</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-us" class="about-us wrapper">
+            <h2 class="section-title">o nas</h2>
+            <p class="about-us-info">Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Accusamus beatae commodi dolor et eum eveniet
+                fuga fugiat iure iusto maiores, minima nulla perferendis placeat,
+                praesentium quia quibusdam, recusandae reprehenderit tenetur?
+            </p>
+            <p class="about-us-info">Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Asperiores aspernatur necessitatibus nulla quas ratione temporibus,
+                tenetur voluptates. Ab, et nostrum.
+            </p>
+        </section>
+
+        <section id="products" class="products wrapper">
+            <h2 class="section-title">Produkty</h2>
+
+            <div class="products-box">
+                <div class="product first-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>przyjazne dzieciom</h3>
+                    </div>
+                </div>
+                <div class="product second-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>najnowsze technologie</h3>
+                    </div>
+                </div>
+
+                <div class="product third-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>user friendly</h3>
+                    </div>
+                </div>
+
+                <div class="product fourth-product">
+                    <div class="hero-bg"></div>
+                    <div class="hero-text">
+                        <h3>kompatybilne z wieloma urządzeniami</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="kontakt" class="contact wrapper">
+            <h2 class="section-title">Kontakt</h2>
+            <p><i class="fas fa-phone"></i>+48 000 000 000</p>
+            <p><i class="fas fa-at"></i>mail@mail.pl</p>
+            <h3>Adress</h3>
+            <p>ul. sezamkowa</p>
+            <p>00-00 Kraków</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Creative Design</p>
+    </footer>
+
 
 </body>
 </html>

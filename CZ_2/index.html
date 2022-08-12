@@ -10,20 +10,19 @@
 </head>
 <body>
 
-    <section class="sky">
-        <div class="sun"></div>
-    </section>
+    <script>
+        for (let i = 0 ; i < 500 ; i++) {
+            const div = document.createElement('div')
+            div.classList.add('square', 'one')
+            document.body.append(div)
+        }
 
-    <section class="ground">
-        <div class="grass"></div>
-        <div class="road">
-            <div class="car">
-                <div class="window front-window"></div>
-                <div class="window rear-window"></div>
-                <div class="wheels front-wheel"></div>
-                <div class="wheels rear-wheel"></div>
-            </div>
-        </div>
-    </section>
+        for (let i = 0 ; i < 500 ; i++) {
+            const div = document.createElement('div')
+            div.classList.add('square', 'two')
+            document.body.append(div)
+        }
+    </script>
+
 </body>
 </html>

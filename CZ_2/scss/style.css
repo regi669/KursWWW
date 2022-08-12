@@ -23,7 +23,6 @@ div span:first-of-type {
 .test p:first-child {
   color: red;
 }
-
 .test p:last-child {
   color: red;
 }

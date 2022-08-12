@@ -22,13 +22,13 @@ div {
   }
 }
 
-
-.test p:first-child {
-  color: red;
-}
-
-.test p:last-child {
-  color: red;
+.test {
+    p:first-child {
+      color: red;
+    }
+    p:last-child {
+      color: red;
+    }
 }
 
 .title {

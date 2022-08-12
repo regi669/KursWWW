@@ -14,49 +14,49 @@ body {
   background-color: #333333;
 }
 
-.square {
-  width: 400px;
-  height: 400px;
-  background-color: gold;
-  border: 3px solid black;
-  animation: color 2s ease-in-out .5s infinite;
-  //animation-direction: reverse;
-
-}
-
-.square:hover {
-  animation-play-state: paused;
-}
-
-.two {
-  animation-direction: alternate;
-}
-
-@keyframes color {
+@keyframes square-animation {
   0% {
-    width: 400px;
-    background-color: gold;
+    width: 300px;
   }
 
   50% {
-    width: 800px;
-    background-color: royalblue;
+    width: 600px;
+    height: 300px;
   }
 
   100% {
-    width: 200px;
-    background-color: lime;
+    width: 300px;
+    height: 600px;
+    background-color: gold;
   }
 }
 
-@keyframes color2 {
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  border: 3px solid black;
+  animation: square-animation 3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes circle-animation {
   from {
-    width: 400px;
-    background-color: gold;
+    background-color: lime;
   }
 
   to {
-    width: 200px;
-    background-color: lime;
+    background-color: blue;
   }
 }
+
+.circle {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-color: lime;
+  border: 3px solid black;
+  animation: circle-animation 2s ease-in-out 3s;
+}
+

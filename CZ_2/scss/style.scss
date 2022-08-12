@@ -12,14 +12,30 @@ body {
   background-color: #333333;
 }
 
-h5 {
-  color: tomato;
-}
-
-p:nth-of-type(2n) {
+li:nth-child(2n) {
   color: lime;
 }
 
-p:nth-of-type(odd) {
-  color: gold;
+div {
+  span:first-of-type {
+    color: gold;
+  }
 }
+
+
+.test p:first-child {
+  color: red;
+}
+
+.test p:last-child {
+  color: red;
+}
+
+.title {
+  transition: color .5s;
+}
+
+.title:hover {
+  color: purple;
+}
+

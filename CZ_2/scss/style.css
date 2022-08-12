@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,27 +13,37 @@ body {
   background-color: #333333;
 }
 
-li:nth-child(2n) {
+p {
+  margin: 100px;
+  text-align: center;
+}
+
+p::before {
+  content: "Cześć ";
   color: lime;
 }
 
-div span:first-of-type {
-  color: gold;
+p::after {
+  content: "! :)";
+  color: lime;
 }
 
-.test p:first-child {
-  color: red;
-}
-.test p:last-child {
-  color: red;
+.hero-img {
+  position: relative;
+  margin: 100px auto;
+  width: 400px;
+  height: 500px;
+  background-image: url("../../CZ_I/Strona1/img/planeta.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.title {
-  transition: color 0.5s;
-}
-
-.title:hover {
-  color: purple;
+.hero-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */

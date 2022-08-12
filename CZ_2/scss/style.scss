@@ -1,0 +1,43 @@
+$main-color: lime;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: royalblue;
+  font-family: sans-serif;
+}
+
+.size {
+  margin: 20px auto;
+  width: 50%;
+  height: 60px;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+
+.box1 {
+  background-color: tomato;
+}
+
+.box2 {
+  background-color: $main-color;
+}
+
+.box3 {
+  background-color: tomato;
+}
+
+.box4 {
+  background-color: $main-color;
+}
+
+.box5 {
+  background-color: tomato;
+}
+
+.box6 {
+  background-color: $main-color;
+}

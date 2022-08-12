@@ -1,11 +1,8 @@
-$colors: (left: lime,
-        middle: gold,
-        right: tomato
-);
+@import "./_colors.scss";
 
 @mixin addons {
   border-radius: 25px;
-  background-color: gold;
+  background-color: $first;
 }
 
 @mixin color($bg-color) {
@@ -18,7 +15,7 @@ body {
   align-items: center;
   flex-direction: row;
   height: 100vh;
-  background-color: #333;
+  background-color: $bgc-color;
   font-family: sans-serif;
 }
 
@@ -31,9 +28,9 @@ body {
 }
 
 .success {
-  @include color(lawngreen)
+  @include color($second)
 }
 
 .warning {
-  @include color(red)
+  @include color($third)
 }

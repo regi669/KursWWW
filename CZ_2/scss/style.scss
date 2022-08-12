@@ -8,6 +8,10 @@ $colors: (left: lime,
   background-color: gold;
 }
 
+@mixin color($bg-color) {
+  background-color: $bg-color;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -24,4 +28,12 @@ body {
   height: 200px;
   border: 2px solid black;
   @include addons;
+}
+
+.success {
+  @include color(lawngreen)
+}
+
+.warning {
+  @include color(red)
 }

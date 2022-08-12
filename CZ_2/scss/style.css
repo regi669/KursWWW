@@ -17,4 +17,12 @@ body {
   background-color: gold;
 }
 
+.success {
+  background-color: lawngreen;
+}
+
+.warning {
+  background-color: red;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,58 +1,50 @@
-@use "./reset";
-@use  "./colors" as colors;
+@import './reset';
 
-@mixin circle($size) {
-  width: $size;
-  height: $size;
+$heading-color: gold;
+$oddSection: deepskyblue;
+$evenSection: dodgerblue;
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $heading-color;
+}
+
+
+h2 {
+  font-size: 2.4em;
+  color: $heading-color;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: $heading-color;
+}
+
+section {
+  height: 25vh;
+  text-align: center;
+}
+
+@mixin circle {
   margin: 30px auto;
-  background-color: colors.$lime;
+  width: 100px;
+  height: 100px;
+  background-color: lime;
   border: 3px solid black;
   border-radius: 50%;
 }
 
 .circle {
-  @include circle(100px)
+  @include circle
 }
-
-html {
-  font-size: 10px;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #333;
-  font-family: sans-serif;
-}
-
 .odd {
-  background-color: colors.$blue;
+  background-color: $oddSection;
 }
 
 .even {
-  background-color: colors.$lightblue;
-}
-
-section {
-  width: 100vw;
-  height: 25vh;
-  color: colors.$gold;
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.4rem;
-  }
-  h3 {
-    font-size: 1.8rem;
-  }
-  p {
-    font-size: 1.6rem;
-    color: colors.$black;
-    font-weight: bold;
-  }
+  background-color: $evenSection;
 }

@@ -9,22 +9,12 @@ body {
 }
 
 .square {
-  width: 60px;
-  height: 60px;
-  margin: 50px;
+  margin: 30px;
+  width: 200px;
+  height: 200px;
   border: 2px solid black;
-}
-
-.item1 {
-  background-color: lime;
-}
-
-.item2 {
+  border-radius: 25px;
   background-color: gold;
-}
-
-.item3 {
-  background-color: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,11 @@ $colors: (left: lime,
         right: tomato
 );
 
+@mixin addons {
+  border-radius: 25px;
+  background-color: gold;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -13,22 +18,10 @@ body {
   font-family: sans-serif;
 }
 
-
 .square {
-  width: 60px;
-  height: 60px;
-  margin: 50px;
+  margin: 30px;
+  width: 200px;
+  height: 200px;
   border: 2px solid black;
+  @include addons;
 }
-
-.item1 {
-  background-color: map-get($colors, left);
-}
-
-.item2 {
-  background-color: map-get($colors, middle);
-}
-
-.item3 {
-   background-color: map-get($colors, right);
- }

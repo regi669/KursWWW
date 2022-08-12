@@ -12,23 +12,22 @@ body {
   background-color: #333333;
 }
 
-div {
-  margin: 50px;
+table,
+tr,
+td {
+  border: 1px solid black;
 }
 
-p:first-child {
+td {
+  width: 300px;
+  height: 100px;
+}
+
+p:nth-child(2n+1) {
   color: lime;
 }
 
-p:last-child {
-  color: gold;
-}
-
-p:first-of-type {
-  color: royalblue;
-}
-
-p:last-of-type {
+p:nth-child(even) {
   color: tomato;
 }
 

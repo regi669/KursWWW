@@ -25,6 +25,15 @@ td {
 
 //odd, even, 2n, 2n+1
 
+tr:nth-child(2n+1) {
+  background-color: grey;
+}
+
+tr:nth-child(even) {
+  background-color: darkgrey;
+}
+
+
 p:nth-child(2n+1) {
   color: lime;
 }

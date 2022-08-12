@@ -1,8 +1,8 @@
-@import "./colors";
+@use "./colors" as colors;
 
 @mixin addons {
   border-radius: 25px;
-  background-color: $first;
+  background-color: colors.$first;
 }
 
 @mixin color($bg-color) {
@@ -15,7 +15,7 @@ body {
   align-items: center;
   flex-direction: row;
   height: 100vh;
-  background-color: $bgc-color;
+  background-color: colors.$bgc-color;
   font-family: sans-serif;
 }
 
@@ -28,9 +28,9 @@ body {
 }
 
 .success {
-  @include color($second)
+  @include color(colors.$second)
 }
 
 .warning {
-  @include color($third)
+  @include color(colors.$third)
 }

@@ -5,37 +5,58 @@
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #333333;
-  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+  font-size: 50px;
+}
+
+section {
+  margin: 20px 0;
+  height: 400px;
+  background-color: #789;
 }
 
 .square {
-  width: 25%;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
   text-align: center;
 }
 
-.one {
+.first {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  height: 600px;
-  background-color: #678;
+  justify-content: center;
+  align-items: center;
 }
 
-.s-one {
+.second {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.third {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one {
   background-color: gold;
 }
 
-.s-two {
-  background-color: greenyellow;
+.two {
+  background-color: lime;
 }
 
-.s-three {
+.three {
   background-color: royalblue;
 }
 
-.s-four {
+.four {
   background-color: tomato;
 }
 

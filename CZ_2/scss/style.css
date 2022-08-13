@@ -17,22 +17,23 @@ body {
   height: 200px;
   font-size: 50px;
   background-color: gold;
-  border: 3px solid black;
 }
 
 .one {
   display: flex;
+  justify-content: center;
 }
 
-.two {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+.s-two {
+  background-color: greenyellow;
 }
 
-.three {
-  display: flex;
-  flex-direction: column-reverse;
+.s-three {
+  background-color: royalblue;
+}
+
+.s-four {
+  background-color: tomato;
 }
 
 /*# sourceMappingURL=style.css.map */

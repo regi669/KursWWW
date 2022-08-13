@@ -11,16 +11,16 @@ body {
 }
 
 .square {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 
 .one {
   display: flex;
-  height: 800px;
-  background-color: #667788;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 600px;
+  background-color: #678;
 }
 
 .s-one {

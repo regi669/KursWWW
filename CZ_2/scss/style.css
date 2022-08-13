@@ -23,19 +23,22 @@ section {
 
 .one {
   background-color: gold;
-  flex-basis: 300px;
+  order: 1;
 }
 
 .two {
   background-color: lime;
+  order: 4;
 }
 
 .three {
   background-color: royalblue;
+  order: 2;
 }
 
 .four {
   background-color: tomato;
+  order: 3;
 }
 
 /*# sourceMappingURL=style.css.map */

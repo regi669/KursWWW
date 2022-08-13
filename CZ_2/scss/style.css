@@ -11,15 +11,11 @@ body {
 }
 
 div {
-  display: inline-block;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
-}
-
-.two {
-  height: 100px;
-  width: 150px;
+  margin: 5px;
+  padding: 20px;
+  font-size: 36px;
+  background-color: tomato;
+  border: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */

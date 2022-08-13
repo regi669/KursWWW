@@ -5,20 +5,13 @@
 }
 
 body {
-  margin-top: 300px;
-  font-family: "Montserrat", sans-serif;
+  margin: 100px;
   background-color: #333;
-  font-size: 36px;
   color: #fff;
 }
 
-.container {
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-[class*=col] {
-  border: 2px solid lime;
+div.container {
+  border: 5px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */

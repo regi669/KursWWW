@@ -6,16 +6,20 @@
 
 body {
   margin: 100px;
-  background-color: white;
+  background-color: #333;
   color: #fff;
 }
 
 div {
   display: inline-block;
   margin: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+}
+
+.two {
+  height: 100px;
+  width: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

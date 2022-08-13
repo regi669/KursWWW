@@ -24,20 +24,17 @@ section {
 
 .one {
   background-color: gold;
-  flex-grow: 1;
+  flex-basis: 300px;
 }
 
 .two {
   background-color: lime;
-  flex-grow: 3;
 }
 
 .three {
   background-color: royalblue;
-  flex-shrink: 0;
 }
 
 .four {
   background-color: tomato;
-  flex-shrink: 2;
 }

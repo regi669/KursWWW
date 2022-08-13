@@ -9,21 +9,28 @@ body {
   background-color: #333333;
 }
 
-section {
-  display: flex;
-  //flex-direction: row;
-  flex-wrap: wrap;
-  //flex-flow: row wrap;
-}
-
 .square {
   display: flex;
-  justify-content: center; //Oś X
-  align-items: center; //OŚ Y
-
-  width: 300px;
-  height: 300px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   font-size: 50px;
   background-color: gold;
   border: 3px solid black;
+}
+
+.one {
+  display: flex;
+}
+
+.two {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.three {
+  display: flex;
+  flex-direction: column-reverse;
 }

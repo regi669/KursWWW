@@ -5,8 +5,18 @@
 }
 
 body {
+  margin: 50px;
   font-family: "Montserrat", sans-serif;
-  background-color: white;
+  background-color: #333;
+  font-size: 40px;
+}
+
+div.container {
+  background-color: royalblue;
+}
+
+div.container-fluid {
+  background-color: gold;
 }
 
 /*# sourceMappingURL=style.css.map */

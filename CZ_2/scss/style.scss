@@ -11,9 +11,7 @@ body {
 }
 
 section {
-  margin: 20px 0;
-  height: 400px;
-  background-color: #789;
+  display: flex;
 }
 
 .square {
@@ -23,39 +21,23 @@ section {
   text-align: center;
 }
 
-.first {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.second {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.third {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .one {
   background-color: gold;
+  flex-grow: 1;
 }
 
 .two {
   background-color: lime;
+  flex-grow: 3;
 }
 
 .three {
   background-color: royalblue;
+  flex-shrink: 0;
 }
 
 .four {
   background-color: tomato;
+  flex-shrink: 2;
 }

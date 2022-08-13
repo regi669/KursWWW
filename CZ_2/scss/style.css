@@ -10,8 +10,12 @@ body {
   color: #fff;
 }
 
-div.container {
-  border: 5px solid white;
+div {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

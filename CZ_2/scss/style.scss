@@ -5,53 +5,25 @@
 }
 
 body {
-
   font-family: sans-serif;
-  font-size: 36px;
-  color: #fff;
   background-color: #333333;
-  overflow: hidden;
+}
+
+section {
+  display: flex;
+  //flex-direction: row;
+  flex-wrap: wrap;
+  //flex-flow: row wrap;
 }
 
 .square {
-  position: relative;
-  display: inline-block;
-  margin: 5px;
-  width: 25px;
-  height: 25px;
-  border-radius: 3px;
-  border: 1px solid black;
-}
+  display: flex;
+  justify-content: center; //Oś X
+  align-items: center; //OŚ Y
 
-.one {
-  background-color: royalblue;
-  animation: bad 1s 2s 8 alternate;
-}
-
-.two {
-  background-color: lime;
-}
-
-.two::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 80px lime;
-  opacity: 0;
-  animation: good 1s 8 10s alternate;
-}
-
-@keyframes bad {
-  100% {
-    box-shadow: 0 0 80px royalblue;
-  }
-}
-
-@keyframes good {
-  100% {
-    opacity: 1;
-  }
+  width: 300px;
+  height: 300px;
+  font-size: 50px;
+  background-color: gold;
+  border: 3px solid black;
 }

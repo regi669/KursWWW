@@ -9,10 +9,15 @@ body {
 }
 
 div {
-  margin: 5px;
-  padding: 20px;
-  background-color: #ddd;
-  border: 2px solid black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

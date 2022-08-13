@@ -1,9 +1,16 @@
 
 
-const p = document.querySelector('.test')
+const btn1 = document.querySelector('.btn1')
 
-console.log(p)
+const btn2 = document.querySelector('.btn2')
 
-const li = document.querySelectorAll('li')
+function HandleClick () {
+    console.log("Btn1 Was Clicked")
+}
 
-console.log(li[0]);
+function HandleClick2 () {
+    console.log("Btn2 Was Clicked")
+}
+
+btn1.addEventListener('click', HandleClick)
+btn2.addEventListener('click', HandleClick2)

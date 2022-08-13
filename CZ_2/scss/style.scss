@@ -11,10 +11,6 @@ body {
   font-size: 40px;
 }
 
-div.container {
-  background-color: royalblue;
-}
-
-div.container-fluid {
-  background-color: gold;
+[class*='col'] {
+  border: 3px solid greenyellow;
 }

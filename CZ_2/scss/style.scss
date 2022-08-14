@@ -5,47 +5,66 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
   background-color: #333;
 }
 
-
-button {
-  padding: 10px 20px;
-  background: none;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 24px;
-  text-transform: uppercase;
-  cursor: pointer;
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  transition: .6s;
+}
+.animate {
+  transform: rotate(180deg);
 }
 
-.btn2 {
-  margin-left: 30px;
+.arrow {
+  transition: 1s;
 }
 
-.color {
-  margin: 50px auto;
-  width: 300px;
-  height: 300px;
-  background-color: gold;
+.item1 {
+  height: 40px;
+  background-image: url('https://cdn.pixabay.com/photo/2015/02/01/22/37/hourglass-620397_960_720.jpg');
 }
 
-.remove-color {
-  background-color: gold;
-  width: 90%;
-  color: #000;
+.item2 {
+  height: 30vh;
+  background-image: url('https://cdn.pixabay.com/photo/2019/06/07/01/42/glass-ball-4257388_960_720.jpg');
+  background-position: center;
 }
 
-.blue {
-  background-color: royalblue;
+.show {
+  height: 50vh;
 }
 
-.red {
-  background-color: tomato;
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+
+  button {
+    margin: 0 30px;
+    padding: 10px 30px;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #00cfff;
+    color: #00cfff;
+    box-shadow: 3px 3px 10px #00cfff;
+    font-size: 36px;
+    transition: color .3s, box-shadow .3s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: #00ffae;
+    box-shadow: 3px 3px 10px #00ffae;
+  }
+
+  .fas {
+    transition: transform .6s
+  }
 }

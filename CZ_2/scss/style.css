@@ -1,45 +1,105 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
+  position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #333;
+  background-color: #444;
 }
 
-.buttons {
-  margin-top: 200px;
-  display: flex;
-  justify-content: center;
-}
-
-.text {
-  margin-top: 200px;
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-}
-
-button {
-  margin: 0 30px;
-  padding: 10px 30px;
-  background: none;
-  border-radius: 5px;
-  border: 2px solid #00cfff;
-  color: #00cfff;
-  box-shadow: 3px 3px 10px #00cfff;
-  font-size: 36px;
-  transition: color 0.3s, box-shadow 0.3s;
+nav {
   text-transform: uppercase;
-  cursor: pointer;
+  z-index: 1;
+}
+nav .nav-link, nav .navbar-brand, nav i {
+  color: #ffffff;
+}
+nav .navbar-brand {
+  color: #ffffff;
+  font-weight: bold;
+}
+nav .navbar-brand span {
+  color: #039dff;
+}
+nav .nav-link:hover, nav .navbar-brand:hover {
+  color: #039dff;
+}
+nav .navbar-nav .nav-link.active {
+  color: #039dff;
+}
+nav .fa-bars {
+  padding: 10px;
 }
 
-button:hover {
-  color: #00ffae;
-  box-shadow: 3px 3px 10px #00ffae;
+header .hero-img {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  background-image: url("../img/ps5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+header .hero-img .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  font-size: 30px;
+  color: #ffffff;
+}
+header .hero-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+header .image-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  height: 100%;
+  z-index: 1;
+}
+header .image-text h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+header .image-text h1 span {
+  color: #039dff;
+}
+header .image-text p {
+  font-size: 14px;
+}
+
+@media (min-width: 375px) {
+  header .image-text h1 {
+    font-size: 36px;
+  }
+  header .image-text p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 765px) {
+  header .image-text h1 {
+    font-size: 42px;
+  }
+  header .image-text p {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

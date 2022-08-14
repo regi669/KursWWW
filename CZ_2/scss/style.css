@@ -10,44 +10,20 @@ body {
   background-color: #333;
 }
 
-.item {
+.buttons {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  background-size: cover;
-  transition: 0.6s;
 }
 
-.animate {
-  transform: rotate(180deg);
+.text {
+  margin-top: 200px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
 }
 
-.arrow {
-  transition: 1s;
-}
-
-.item1 {
-  height: 40px;
-  background-image: url("https://cdn.pixabay.com/photo/2015/02/01/22/37/hourglass-620397_960_720.jpg");
-}
-
-.item2 {
-  height: 30vh;
-  background-image: url("https://cdn.pixabay.com/photo/2019/06/07/01/42/glass-ball-4257388_960_720.jpg");
-  background-position: center;
-}
-
-.show {
-  height: 50vh;
-}
-
-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-section button {
+button {
   margin: 0 30px;
   padding: 10px 30px;
   background: none;
@@ -57,14 +33,13 @@ section button {
   box-shadow: 3px 3px 10px #00cfff;
   font-size: 36px;
   transition: color 0.3s, box-shadow 0.3s;
+  text-transform: uppercase;
   cursor: pointer;
 }
-section button:hover {
+
+button:hover {
   color: #00ffae;
   box-shadow: 3px 3px 10px #00ffae;
-}
-section .fas {
-  transition: transform 0.6s;
 }
 
 /*# sourceMappingURL=style.css.map */

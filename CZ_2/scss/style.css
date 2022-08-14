@@ -12,9 +12,14 @@ body {
   background-color: #444;
 }
 
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 nav {
   text-transform: uppercase;
   z-index: 1;
+  transition: background-color 0.6s;
 }
 nav .nav-link, nav .navbar-brand, nav i {
   color: #ffffff;

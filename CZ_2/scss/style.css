@@ -16,6 +16,10 @@ body {
   background-color: #ebecf2;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 h2 {
   text-align: center;
   text-transform: uppercase;

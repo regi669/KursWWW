@@ -35,7 +35,7 @@ h2 {
 
 nav {
   text-transform: uppercase;
-  z-index: 1;
+  z-index: 3;
   transition: background-color .6s;
   .nav-link, .navbar-brand, i {
     color: c.$whiteColor;
@@ -194,6 +194,36 @@ header {
   }
 }
 
+.portfolio {
+  .carousel-item {
+    position: relative;
+
+    .carousel-img {
+      position: relative;
+      top: 0;
+      height: 40vh;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .carousel-shadow {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      height: 30%;
+      background-color: rgba(0,0,0,.8);
+    }
+
+    .img-first {
+      background-image: url('../img/gracze.jpg');
+    }
+
+    .img-second {
+      background-image: url('../img/auto.jpg');
+    }
+  }
+}
+
 @media (min-width: 375px) {
   header {
     .image-text {
@@ -223,8 +253,8 @@ header {
 }
 
 @media (min-width: 992px) {
-  html {
-    scroll-padding-top: 72px;
+  nav {
+    height: 82px;
   }
 }
 

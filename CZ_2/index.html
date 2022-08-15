@@ -24,7 +24,7 @@
     <title>Pro Gamers</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="81">
 
     <nav id="navbar"
          class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
@@ -135,6 +135,65 @@
                 </div>
             </div>
         </section>
+
+        <section id="portfolio" class="portfolio bg-light py-5">
+            <div class="container">
+                <h2>portfolio</h2>
+                <div class="underline"></div>
+
+                <div id="carousel" class="carousel slide d-none d-lg-block" data-bs-ride="false">
+                    <div class="carousel-indicators pb-3">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="carousel-img img-first"></div>
+                            <div class="carousel-shadow"></div>
+                            <div class="carousel-caption d-none d-md-block mb-4">
+                                <h5>Pro-X-Football</h5>
+                                <p>Nasze gry wymiatają.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-img img-second"></div>
+                            <div class="carousel-shadow"></div>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Racing GT</h5>
+                                <p>Tę grę kochają miliony!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-group d-lg-none">
+                    <div class="card mx-2">
+                        <img src="./img/gracze.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pro-X-Football</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card mx-2">
+                        <img src="./img/auto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Racing GT</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <div id="team" style="height: 100vh"></div>

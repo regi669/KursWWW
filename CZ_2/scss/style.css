@@ -13,7 +13,7 @@ html {
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
-  background-color: #444;
+  background-color: #ebecf2;
 }
 
 h2 {
@@ -192,6 +192,46 @@ header .image-text p {
   background-image: url("../img/auto.jpg");
 }
 
+.prices .price-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.prices .price-box h3 {
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-box i {
+  padding: 0 5px;
+  font-size: 24px;
+}
+.prices .price-box .price-tag {
+  font-size: 36px;
+  font-weight: bold;
+}
+.prices .price-box span {
+  font-weight: bold;
+}
+.prices .price-box hr {
+  width: 85%;
+  margin: 20px auto;
+}
+.prices .price-box:hover {
+  transform: scale(1.05);
+}
+.prices .price-info {
+  margin-top: 40px;
+  text-align: center;
+}
+.prices .price-info a {
+  text-decoration: none;
+}
+.prices .text-muted {
+  text-align: center;
+}
+
 @media (min-width: 375px) {
   header .image-text h1 {
     font-size: 36px;
@@ -200,7 +240,7 @@ header .image-text p {
     font-size: 16px;
   }
 }
-@media (min-width: 765px) {
+@media (min-width: 768px) {
   header .image-text h1 {
     font-size: 42px;
   }
@@ -211,6 +251,9 @@ header .image-text p {
 @media (min-width: 992px) {
   nav {
     height: 82px;
+  }
+  .prices .price-info {
+    font-size: 18px;
   }
 }
 

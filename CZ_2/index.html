@@ -20,6 +20,8 @@
     <link rel="stylesheet"
           type="text/css"
           href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet">
     <link rel="stylesheet"
           href="./scss/style.css">
     <script src="https://kit.fontawesome.com/e9b3124b7d.js"
@@ -58,47 +60,51 @@
     <header id="home">
         <div class="hero-img">
             <div class="image-text">
-                <h1>witajcie w pro<span>gamers</span></h1>
-                <p>w miejsciu gdzie gry tworzymy z pasją</p>
-                <a href="#aboutus" type="button" class="btn btn-outline-light">poznaj nas</a>
+                <h1 data-aos="fade-up" data-aos-delay="200">witajcie w pro<span>gamers</span></h1>
+                <p data-aos="fade-up" data-aos-delay="400">w miejsciu gdzie gry tworzymy z pasją</p>
+                <a data-aos="fade-up" data-aos-delay="600"
+                   href="#aboutus"
+                   type="button"
+                   class="btn btn-outline-light">poznaj nas</a>
             </div>
             <a href="#aboutus"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
         </div>
     </header>
 
     <main>
-        <section id="aboutus" class="aboutus bg-light py-5">
+        <section id="aboutus"
+                 class="aboutus bg-light py-5">
             <div class="container">
                 <h2>o nas</h2>
                 <div class="underline"></div>
 
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="100">
                         <p><i class="fas fa-mobile-alt"></i></p>
                         <p class="aboutus-card-title mb-1">mobile gaming</p>
                         <p class="aboutus-card-text">Tworzymy gry na urządzenia mobilne!</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="200">
                         <p><i class="fas fa-desktop"></i></p>
                         <p class="aboutus-card-title mb-1">desktop gaming</p>
                         <p class="aboutus-card-text">Tworzymy gry na PC!</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="300">
                         <p><i class="fas fa-file-code"></i></p>
                         <p class="aboutus-card-title mb-1">najwyższe standardy</p>
                         <p class="aboutus-card-text">Zachowujemy najwyższe standardy podczas pisania kodu.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="400">
                         <p><i class="fas fa-paw"></i></p>
                         <p class="aboutus-card-title mb-1">kochamy zwierzęta!</p>
                         <p class="aboutus-card-text">Wszystkie nasze gry są bezpieczne dla środowiska. :)</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="500">
                         <p><i class="fas fa-hamburger"></i></p>
                         <p class="aboutus-card-title mb-1">lubimy dobre jedzenie</p>
                         <p class="aboutus-card-text">Lubimy dobrze zjeść przed przystąpieniem do naszych zadań.</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 text-center aboutus-hover">
+                    <div class="col-sm-6 col-md-4 text-center aboutus-hover" data-aos="zoom-in" data-aos-delay="600">
                         <p><i class="fas fa-glass-cheers"></i></p>
                         <p class="aboutus-card-title mb-1">świetne relacje</p>
                         <p class="aboutus-card-text">Zachowujemy świetne relacje z naszymi klientami!</p>
@@ -113,17 +119,17 @@
                 <h2>tworzymy gry na platformy</h2>
                 <div class="underline"></div>
                 <div class="row">
-                    <div class="col-lg-4 text-center aboutus-hero-item">
+                    <div class="col-lg-4 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="700">
                         <p class="aboutus-hero-title mb-1">PC</p>
                         <p><i class="fab fa-steam-square"></i></p>
                         <p class="aboutus-hero-text">Graj ze znajomymi na swoim blaszaku!</p>
                     </div>
-                    <div class="col-lg-4 text-center aboutus-hero-item">
+                    <div class="col-lg-4 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="800">
                         <p class="aboutus-hero-title mb-1">PlayStation</p>
                         <p><i class="fab fa-playstation"></i></p>
                         <p class="aboutus-hero-text">Gry świetnie prezentują się na konsoli od Sony!</p>
                     </div>
-                    <div class="col-lg-4 text-center aboutus-hero-item">
+                    <div class="col-lg-4 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="900">
                         <p class="aboutus-hero-title mb-1">Xbox</p>
                         <p><i class="fab fa-xbox"></i></p>
                         <p class="aboutus-hero-text">Fani Xboxa spędzą z nami mnóstwo godzin!</p>
@@ -201,7 +207,7 @@
 
                 <div class="price-wrap row text-center justify-content-center">
                     <div class="col-md-6 col-xl-4">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="200">
                             <h3>mobile</h3>
                             <hr>
                             <p><span>Urządzenia:</span> <i class="fa-solid fa-mobile-screen-button"></i></p>
@@ -213,7 +219,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="400">
                             <h3>mobile & pc</h3>
                             <hr>
                             <p><span>Urządzenia:</span> <i class="fa-solid fa-mobile-screen-button"></i><i
@@ -226,7 +232,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-xl-4">
-                        <div class="price-box">
+                        <div class="price-box" data-aos="flip-left" data-aos-delay="600">
                             <h3>full pack</h3>
                             <hr>
                             <p><span>Urządzenia:</span> <i class="fa-solid fa-mobile-screen-button"></i><i
@@ -341,33 +347,33 @@
                 <h2>Osiągnięcia</h2>
                 <div class="underline"></div>
 
-                <div class="row text-center">
+                <div class="row text-center" data-aos="zoom-in" data-aos-delay="200">
                     <div class="col-sm-6 col-md-4 col-lg-2 px-2">
                         <i class="fa-solid fa-thumbs-up"></i>
                         <p class="achiev-text-top">100%</p>
                         <p class="achiev-text-bottom">Zadowolonych klientów</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 px-2">
+                    <div class="col-sm-6 col-md-4 col-lg-2 px-2" data-aos="zoom-in" data-aos-delay="400">
                         <i class="fa-solid fa-trophy"></i>
                         <p class="achiev-text-top">37</p>
                         <p class="achiev-text-bottom">Zdobytych nagród</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 px-2">
+                    <div class="col-sm-6 col-md-4 col-lg-2 px-2" data-aos="zoom-in" data-aos-delay="200">
                         <i class="fa-solid fa-trophy"></i>
                         <p class="achiev-text-top">143</p>
                         <p class="achiev-text-bottom">Pracowników</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 px-2">
+                    <div class="col-sm-6 col-md-4 col-lg-2 px-2" data-aos="zoom-in" data-aos-delay="400">
                         <i class="fa-solid fa-building"></i>
                         <p class="achiev-text-top">7</p>
                         <p class="achiev-text-bottom">Nowoczesnych biur</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 px-2">
+                    <div class="col-sm-6 col-md-4 col-lg-2 px-2" data-aos="zoom-in" data-aos-delay="200">
                         <i class="fa-solid fa-dice"></i>
                         <p class="achiev-text-top">58</p>
                         <p class="achiev-text-bottom">Stworzonych gier</p>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-lg-2 px-5col-sm-6 col-md-4 ">
+                    <div class="col-sm-6 col-md-4 col-lg-2 px-5col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="400">
                         <i class="fa-solid fa-share-nodes"></i>
                         <p class="achiev-text-top">80.000</p>
                         <p class="achiev-text-bottom">Fanów w social media</p>
@@ -426,6 +432,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript"
             src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/slicksettings.js"></script>
 </body>

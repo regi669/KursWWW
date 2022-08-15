@@ -18,10 +18,6 @@ body {
   background-color: c.$bg-color;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 h2 {
   text-align: center;
   text-transform: uppercase;
@@ -150,60 +146,37 @@ header {
   .aboutus-hover:hover {
     color: c.$mainColor;
   }
+}
 
-  .hero-img {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/czip.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+.aboutus-hero {
+  position: relative;
+  background-image: url('../img/czip.jpg');
+  background-position: center;
+  background-size: cover;
+  color: c.$bg-color;
+  z-index: 0;
 
-    .aboutus-hero-title, .aboutus-hero-text, h2, i {
-      color: c.$lightGray;
-    }
-
-    .aboutus-hero-item {
-      transition: color .6s;
-      margin: 10px 0;
-
-      i {
-        font-size: 36px;
-      }
-
-      .aboutus-hero-title {
-        font-size: 24px;
-      }
-
-      p, i {
-        transition: color .6s;
-      }
-    }
-
-    .aboutus-hero-item:hover p {
-      color: c.$mainColor;
-    }
-
-    .aboutus-hero-item:hover i {
-      color: c.$mainColor;
-    }
-
-  }
-
-  .hero-img::before {
-    content: '';
+  .aboutus-shadow {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
-    z-index: -1;
+    z-index: -5;
   }
+
+  .aboutus-hero-item {
+    margin: 10px 0;
+
+    i {
+      font-size: 36px;
+    }
+
+    .aboutus-hero-title {
+      font-size: 24px;
+    }
+  }
+
 }
 
 .portfolio {

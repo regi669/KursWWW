@@ -232,6 +232,61 @@ header .image-text p {
   text-align: center;
 }
 
+.team .hero-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/office.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.team .hero-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.team .team-content {
+  z-index: 1;
+}
+.team .team-content h2 {
+  color: #ebecf2;
+}
+.team .card {
+  margin: 10px 30px;
+  transition: transform 0.3s;
+}
+.team .card img {
+  height: 300px;
+  object-fit: cover;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card .card-body h5 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.team .card .card-footer {
+  padding: 15px 0;
+}
+.team .card i {
+  font-size: 20px;
+}
+.team .card:hover {
+  transform: scale(0.95);
+}
+
 @media (min-width: 375px) {
   header .image-text h1 {
     font-size: 36px;

@@ -287,6 +287,63 @@ header .image-text p {
   transform: scale(0.95);
 }
 
+.achievements i {
+  color: #ffffff;
+  font-size: 46px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+.achievements .achiev-text-top {
+  padding-top: 20px;
+  font-size: 24px;
+}
+.achievements .achiev-text-bottom {
+  text-transform: uppercase;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/america.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 1;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -1;
+}
+.contact .contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact-item {
+  padding: 10px 0;
+  color: #ffffff;
+}
+.contact .contact-item h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+.contact h2 {
+  color: #ffffff;
+}
+.contact .social-media a {
+  padding: 0 20px;
+  color: #ffffff;
+  font-size: 26px;
+  transition: color 0.6s;
+}
+.contact .social-media a:hover {
+  color: #039dff;
+}
+
 @media (min-width: 375px) {
   header .image-text h1 {
     font-size: 36px;

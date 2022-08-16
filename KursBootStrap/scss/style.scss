@@ -10,10 +10,21 @@ html {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
-  background-color: #333;
   font-family: 'Roboto', sans-serif;
 }
+
+[id] {
+  scroll-margin-top: 79px;
+}
+
+@media (min-width: 992px) {
+  [id] {
+    scroll-margin-top: 69px;
+  }
+}
+
 .navbar {
   .navbar-brand {
     font-size: 2.2rem;
@@ -36,6 +47,25 @@ body {
   }
 }
 
+.home {
+  position: relative;
+  height: 60rem;
+  z-index: 0;
+  background-image: url('../img/usa.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .welcome-text {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 1em 2em;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+}
+
 .hero-shadow {
   position: absolute;
   top: 0;
@@ -43,8 +73,63 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,.8);
+  z-index: -1;
 }
 
 .orange-color {
   color: rgb(255,102,0);
+}
+
+.aboutus {
+  .aboutus-box {
+    h3 {
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .accordion {
+    .accordion-button {
+      font-size: 1.8rem;
+      padding: 1em;
+    }
+
+    .accordion-button:not(.collapsed) {
+      color: rgb(233, 106, 22);
+      background-color: rgb(248, 248, 248);
+    }
+  }
+}
+
+.team {
+  background-color: rgb(248, 248, 248);
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+}
+
+.contact {
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .submit-from {
+    font-size: 1.6rem;
+  }
+
+  .form-control {
+    font-size: 1.6rem;
+  }
 }

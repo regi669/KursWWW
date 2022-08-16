@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar .navbar-brand {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.navbar .navbar-toggler-icon {
+  font-size: 1.8rem;
+}
+.navbar .navbar-toggler {
+  padding: 10px 15px;
+}
+.navbar .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.orange-color {
+  color: rgb(255, 102, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

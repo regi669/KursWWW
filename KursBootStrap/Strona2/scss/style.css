@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-icicles, span {
+  color: royalblue;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.top-hero {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  z-index: 0;
+}
+
+.top-hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+nav .fa-icicles {
+  margin-right: 5px;
+}
+nav .navbar-brand {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+nav .fa-bars {
+  color: white;
+  padding: 10px;
+  font-size: 2rem;
+}
+nav .nav-link {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+header {
+  font-size: 2rem;
+}
+header .carousel-item {
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+header .carousel-img-one {
+  background-image: url("../img/main-carousel-1.jpg");
+}
+header .carousel-img-two {
+  background-image: url("../img/main-carousel-2.jpg");
+}
+header .carousel-img-three {
+  background-image: url("../img/main-carousel-3.jpg");
+}
+
+.home-boxes {
+  padding: 5em 0;
+}
+
+.home-box i {
+  font-size: 4rem;
+}
+
+.home-box h3 {
+  font-size: 2.6rem;
+}
+
+.home-passion {
+  position: relative;
+  height: 350px;
+  background-image: url("../img/sunset-gb0461af59_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+.home-story .home-story-item h3 {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.home-story .home-story-item p {
+  font-size: 1.6rem;
+}
+
+footer {
+  font-size: 1.6rem;
+}
+
+.aboutus-hero {
+  background-image: url("../img/about/about-hero.jpg");
+  background-position: bottom;
+}
+
+.aboutus-info {
+  background-color: rgb(248, 248, 248);
+}
+.aboutus-info .container {
+  padding: 2em 0.5em;
+}
+
+.aboutus-text {
+  padding: 1.8em;
+}
+.aboutus-text h3 {
+  margin-bottom: 0.5rem;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: underline #007bff;
+}
+
+.aboutus-text-right {
+  text-align: right;
+}
+
+.aboutus-img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.services-hero {
+  background-image: url("../img/services/car-gbb09991d1_1280.jpg");
+  background-position: 0 75%;
+}
+
+.services-middle-hero-first {
+  background-image: url("../img/services/engine.jpg");
+}
+
+.services-middle-hero-second {
+  background-image: url("../img/services/visual.jpg");
+}
+
+.services-middle-hero-third {
+  background-image: url("../img/services/car-audio.jpg");
+}
+
+.services-middle-hero-fourth {
+  background-image: url("../img/services/allinone.jpg");
+}
+
+.projects-hero {
+  background-image: url("../img/projects/project-hero.jpg");
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .aboutus-info .container {
+    padding: 0;
+  }
+  .aboutus-shadow {
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  .aboutus-text {
+    padding: 5em 0;
+    transform: skew(-15deg);
+  }
+  .aboutus-text-left {
+    padding-right: 2em;
+    text-align: right;
+  }
+  .aboutus-text-right {
+    padding-left: 2em;
+    text-align: left;
+  }
+  .aboutus-img {
+    height: auto;
+    transform: skew(-15deg);
+  }
+}
+.aboutus-cards h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1400px) {
+  header .carousel-item {
+    height: 600px;
+  }
+  header .carousel-img-one {
+    background-image: url("../img/main-carousel-1-hq.jpg");
+  }
+  header .carousel-img-two {
+    background-image: url("../img/main-carousel-2-hq.jpg");
+  }
+  header .carousel-img-three {
+    background-image: url("../img/main-carousel-3-hq.jpg");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

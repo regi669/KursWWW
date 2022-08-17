@@ -189,6 +189,67 @@ footer {
   background-position: center;
 }
 
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects-middle {
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .text-card-box, a {
+    font-size: 1.4rem;
+  }
+
+  a {
+    text-transform: uppercase;
+  }
+
+  span {
+    color: black;
+  }
+}
+
+.contact-hero {
+  background-image: url('../img/contact/shell.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.6rem;
+  }
+
+  .contact-logo {
+    font-size: 3rem;
+  }
+
+  input, select, textarea {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.3em 0.8em;
+    font-size: 2rem;
+  }
+}
+
+.contact-map {
+  iframe {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
 @media (min-width: 992px) {
   .aboutus-info {
 

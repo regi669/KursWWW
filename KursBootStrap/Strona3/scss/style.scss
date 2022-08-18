@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 1600px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #181d23;
+  overflow: scroll;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.panel {
+  width: 1600px;
+  height: 1000px;
+  border: 1px solid #4b5769;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .panel-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #4b5769;
+
+    .date-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+
+      .day {
+        font-size: 2rem;
+      }
+
+      .time {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+
+      .date {
+        font-size: 1.8rem;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 700px;
+
+      .menu-item {
+        i {
+          font-size: 6rem;
+          margin-bottom: 0.4rem;
+        }
+
+        p {
+          font-size: 2rem;
+          text-transform: uppercase;
+        }
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+        text-decoration: none;
+        border-radius: 15px;
+        border: 1px solid #ddd;
+        color: white;
+      }
+
+      a:hover {
+        background-color: transparent;
+        background-image: linear-gradient(160deg, rgba(0,110,255,.25) 0%, rgba(9,255,0,0.25) 100%);
+      }
+    }
+
+    .info-box {
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .panel-right {
+    background-image: linear-gradient(180deg, rgba(55,64,76,1) 0%, rgba(21,26,32,1) 100%);
+
+    .main-stats h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .main-stat-box {
+      height: 140px;
+      border-radius: 15px;
+      transition: background-color .3s;
+    }
+
+    .main-stat-box:hover {
+      background-color: rgba(255,255,255,.08);
+    }
+
+    .main-stat-box h3 {
+      margin-bottom: 1em;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .main-stat-box p {
+      font-size: 1.2rem;
+    }
+  }
+}

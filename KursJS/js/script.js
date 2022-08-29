@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
             passInfo.style.color = "grey"
             return
         }
-        if (passInput.value.length < 10) {
+        if (passInput.value.length < minValue) {
             passInfo.textContent = "Słabe Hasło"
             passInfo.style.color = "tomato"
             return
@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (passInput.value.match(letters) && passInput.value.match(numbers)) {
             if (passInput.value.match(special)) {
                 passInfo.textContent = "Bardzo Dobre Hasło"
-                passInfo.style.color = "limegreen"
+                passInfo.style.color = "lime"
                 return
             }
             passInfo.textContent = "Dobre Hasło"
-            passInfo.style.color = "lime"
+            passInfo.style.color = "limegreen"
         }
     }
 

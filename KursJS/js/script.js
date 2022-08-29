@@ -1,9 +1,15 @@
-const test = document.getElementById('test')
-console.log(test)
-const test2 = document.getElementsByTagName('ul')
-console.log(test2)
-const test3 = document.getElementsByClassName('test3')
-console.log(test3)
+document.addEventListener("DOMContentLoaded", () => {
+    const img = document.querySelector('.item1')
+    const btn  = document.querySelector('.arrow')
+    const arrowIcon = document.querySelector('.fas')
+    function onClick() {
+        img.classList.toggle('show')
+        if (img.classList.contains('show')) {
+            arrowIcon.style.transform = "rotate(180deg)"
+        } else {
+            arrowIcon.style.transform = "rotate(0)"
+        }
+    }
 
-const newTest = document.querySelector('#test') //nazwa klasy w css
-console.log(newTest)
+    btn.addEventListener('click', onClick)
+})

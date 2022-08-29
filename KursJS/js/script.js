@@ -1,33 +1,57 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const passInput = document.querySelector('#password');
-    const passInfo = document.querySelector('.passinfo');
-    const letters = /[a-z]/i;
-    const numbers = /[0-9]/;
-    const special = /[!@#$%^&*()]/;
-    const minValue = 10;
+    const converter = document.querySelector('#converter');
+    const result = document.querySelector('.result');
+    const convBtn = document.querySelector('.conv');
+    const resetBtn = document.querySelector('.reset');
+    const changeBtn = document.querySelector('.change');
+    const one = document.querySelector('.one');
+    const two = document.querySelector('.two');
 
+    let fahrenheit
+    let celsius
 
-    function onInput() {
-        if (passInput.value.length < 1) {
-            passInfo.textContent = "Nie podałeś hasła..."
-            passInfo.style.color = "grey"
+    const onChange = () => {
+        if (one.textContent === "°C") {
+            one.textContent = "°F"
+            two.textContent = "°C"
+        } else {
+            one.textContent = "°C"
+            two.textContent = "°F"
+        }
+        result.textContent = ''
+    }
+
+    const fahrToCel =  () => {
+        fahrenheit = (converter.value * 1.8) + 32
+        result.textContent = `${converter.value}°C to ${fahrenheit.toFixed(1)}°F`
+        converter.value = ''
+    }
+
+    const celToFahr =  () => {
+        celsius = (converter.value - 32) / 1.8
+        result.textContent = `${converter.value}°F to ${celsius.toFixed(1)}°C`
+        converter.value = ''
+    }
+
+    const conversion = () => {
+        if (converter.value === '') {
+            result.textContent = 'Musisz coś wpisać'
             return
         }
-        if (passInput.value.length < minValue) {
-            passInfo.textContent = "Słabe Hasło"
-            passInfo.style.color = "tomato"
-            return
-        }
-        if (passInput.value.match(letters) && passInput.value.match(numbers)) {
-            if (passInput.value.match(special)) {
-                passInfo.textContent = "Bardzo Dobre Hasło"
-                passInfo.style.color = "lime"
-                return
-            }
-            passInfo.textContent = "Dobre Hasło"
-            passInfo.style.color = "limegreen"
+        if (one.textContent === "°C") {
+            fahrToCel()
+        } else {
+            celToFahr()
         }
     }
 
-    passInput.addEventListener('input', onInput)
+    const onReset = () => {
+        result.textContent = ''
+        converter.value = ''
+    }
+    
+    
+    changeBtn.addEventListener('click', onChange)
+    convBtn.addEventListener('click', conversion)
+    resetBtn.addEventListener('click', onReset)
 })

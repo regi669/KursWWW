@@ -1,15 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const img = document.querySelector('.item1')
-    const btn  = document.querySelector('.arrow')
-    const arrowIcon = document.querySelector('.fas')
-    function onClick() {
-        img.classList.toggle('show')
-        if (img.classList.contains('show')) {
-            arrowIcon.style.transform = "rotate(180deg)"
-        } else {
-            arrowIcon.style.transform = "rotate(0)"
+    const passInput = document.querySelector('#password');
+    const passInfo = document.querySelector('.passinfo');
+    const letters = /[a-z]/i;
+    const numbers = /[0-9]/;
+    const special = /[!@#$%^&*()]/;
+    const minValue = 10;
+
+
+    function onInput() {
+        if (passInput.value.length < 1) {
+            passInfo.textContent = "Nie podałeś hasła..."
+            passInfo.style.color = "grey"
+            return
+        }
+        if (passInput.value.length < 10) {
+            passInfo.textContent = "Słabe Hasło"
+            passInfo.style.color = "tomato"
+            return
+        }
+        if (passInput.value.match(letters) && passInput.value.match(numbers)) {
+            if (passInput.value.match(special)) {
+                passInfo.textContent = "Bardzo Dobre Hasło"
+                passInfo.style.color = "limegreen"
+                return
+            }
+            passInfo.textContent = "Dobre Hasło"
+            passInfo.style.color = "lime"
         }
     }
 
-    btn.addEventListener('click', onClick)
+    passInput.addEventListener('input', onInput)
 })
